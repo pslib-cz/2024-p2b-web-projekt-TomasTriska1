@@ -1,0 +1,93 @@
+html {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url('images/desktop-background.png') no-repeat center center;
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 12px;
+    max-width: 100%; /* Zajistí, že kontejner nepřesáhne šířku obrazovky */
+  overflow: hidden; /* Skryje přetékající obsah */
+  margin: 0 auto; /* Vycentruje obsah */
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+p {
+  margin-bottom: 50px;
+  color: #333;
+  margin-top: 0;
+}
+.buttons button {
+  width: 200px;
+  margin: 30px;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+.buttons a {
+  text-decoration: none;
+}
+.buttons button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+.text-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  margin: 0 auto 30px auto;
+  text-align: justify;
+}
+.swiper {
+  width: 100%; /* Šířka slideru se přizpůsobí rodiči */
+  max-width: 600px; /* Maximální šířka slideru na větších obrazovkách */
+  height: 350px; /* Výchozí výška slideru */
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide img {
+  width: 100%; /* Obrázek se přizpůsobí šířce rodiče */
+  height: 100%; /* Obrázek se přizpůsobí výšce rodiče */
+  object-fit: cover; /* Zajistí, že obrázek vyplní prostor bez deformace */
+  border-radius: 12px;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url('images/mobile-background.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .buttons button {
+    display: inline-block;
+  }
+}
